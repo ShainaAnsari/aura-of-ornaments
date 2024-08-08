@@ -1,0 +1,54 @@
+/* .top {
+    position: relative; 
+    top: 0;
+    margin-top: 160px;
+} */
+
+h1 {
+    line-height: 70px;
+    color: white;
+    font-size: 54px;
+    font-weight: 400;
+}
+h2
+{
+    line-height: 70px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+h3
+{
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.para {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 26px;
+    color: white;
+}
+
+button {
+    width: 140px;
+    height: 48px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+button a {
+    color: #000;
+}
+.invert
+{
+    filter: invert(1);
+}
+.section-style
+{
+    height: 70vh;
+    padding-left: 68px;
+    padding-right: 68px;
+    margin-top: 90px;
+}
