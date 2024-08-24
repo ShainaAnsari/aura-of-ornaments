@@ -6,25 +6,27 @@ h1 {
 }
 
 h2 {
-    width: 450px;
+    width: 630px;
     margin: 0 auto;
     line-height: 70px;
-    font-size: 46px;
+    font-size: 40px;
     font-weight: 400;
     margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
     text-align: center;
 }
 
 h3 {
-    line-height: 45px;
-    font-size: 30px;
+    line-height: 29px;
+    font-size: 20px;
     font-weight: 300;
     color: #000;
 }
 
 h4 {
     line-height: 42px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
 }
 
@@ -40,19 +42,23 @@ h4 {
     padding-right: 100px;
 }
 
-button {
+.btn {
     width: 140px;
     height: 48px;
     font-size: 17px;
     border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    place-items: center;
+    place-content: center;
 }
 
-button a {
+.btn a {
     color: #000;
 }
 
-button:hover {
-    box-shadow: -1px -1px 1px rgba(255, 252, 252, 0.8), 1px 1px 1px rgba(255, 255, 255, 0.915);
+.btn:hover {
+    /* box-shadow: -1px -1px 1px rgba(255, 252, 252, 0.8), 1px 1px 1px rgba(255, 255, 255, 0.915); */
 }
 
 .invert {
@@ -66,6 +72,6 @@ button:hover {
 }
 
 .bg-color {
-    background: #FCF0F4;
-    background: rgb(243 213 213 / 70%);
+    background: #fff1e6;
+    background: #fff1e696;
 }

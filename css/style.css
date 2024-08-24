@@ -54,11 +54,14 @@ header .menu a:hover {
     text-decoration: underline;
 }
 
-header .btn {
+header .buttons {
     display: flex;
     gap: 20px;
     align-items: center;
     width: 210px;
+}
+header .buttons .btn{
+    width: 95px;
 }
 
 /* header section ends */
@@ -75,7 +78,7 @@ header .btn {
 #main-banner .main-banner-content {
     width: 100%;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 50% 50%;
     margin-top: 10em;
 }
 
@@ -95,7 +98,7 @@ header .btn {
 #main-banner .left h1::before {
     content: url(../images/banner-ring.png);
     position: absolute;
-    right: 202px;
+    right: 163px;
     top: 73px;
 }
 
@@ -104,7 +107,7 @@ header .btn {
     width: 490px;
 }
 
-#main-banner button {
+#main-banner .btn {
     padding: 8px 0 8px 0;
 }
 
@@ -117,6 +120,7 @@ header .btn {
     margin: 0;
     line-height: normal;
     text-align: left;
+    text-transform: unset;
 }
 
 #main-banner .img-container {
@@ -150,23 +154,25 @@ header .btn {
 }
 
 #main-banner .customers-block .customers-content {
-    padding-left: 32px;
+    padding-left: 36px;
 }
 
 #main-banner .customers-block h4 {
     color: #fff;
     font-weight: 300;
     font-size: 18px;
+    line-height: 20px;
 }
 
 #main-banner .customers-block .customer-ratings {
     display: flex;
     align-items: center;
+    gap:6px;
 }
 
 #main-banner .customers-block .customer-ratings img {
     padding-bottom: 5px;
-    width: 13px;
+    width: 18px;
 }
 
 #main-banner .customers-block p {
@@ -220,7 +226,10 @@ header .btn {
 
 
 /* category-block section starts */
-
+#category-block h3{
+    text-align: center;
+    /* font-size: 25px; */
+}
 #category-block .card-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -246,9 +255,12 @@ header .btn {
     gap: 10px;
 }
 
+#category-block .card-container .cards .card-content h3{
+    font-size: 23px;
+}
 #category-block .card-container .cards .card-content .right-arrow {
-    height: 28px;
-    width: 36px;
+    height: 30px;
+    width: 26px;
 }
 
 #category-block .card-container .cards .card-content .right-arrow img {
@@ -262,10 +274,10 @@ header .btn {
 /* product section starts */
 
 #product .section-style {
-    height: 90vh;
+    height: 86vh;
 }
 
-#product h3 {
+#product h3{
     text-align: center;
 }
 
@@ -298,38 +310,136 @@ header .btn {
 #product .product-container .product-cards .product-content h3 {
     font-weight: 400;
     text-align: left;
-    line-height: 35px;
-    font-size: 25px;
+    line-height: 30px;
+    font-size: 22px;
 }
 
 #product .product-container .product-cards .product-content h5 {
     font-weight: 300;
-    font-size: 24px;
-    line-height: 60px;
+    font-size: 20px;
+    line-height: 48px;
 }
 
-
-#product .product-container .product-cards .product-content button {
+#product .product-container .product-cards .product-content .btn {
     border: 1px solid rgba(125, 130, 108, 1);
     /* background: transparent; */
 }
 
 /* product section ends */
 
+/* Testimonials section starts */
+#testimonials .section-style
+{
+    height: 77vh;
+    /* background: black; */
+}
+#testimonials h3
+{
+    text-align: center;
+    width: 445px;
+    margin: 0 auto;
+}
+#testimonials .testimonials-header h2
+{
+    margin-bottom: 0;
+}
+#testimonials .testimonials-header h3{
+    font-size: 19px;
+    width: 500px;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 54px;
+    margin-bottom: 13px;
+}
+#testimonials .testimonial-container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    place-items: center;
+    padding-top: 24px;
+}
+#testimonials .testimonial-container .testimonial-cards
+{
+    box-shadow: 0px 4px 100px 0px #AFADB51A;
+    height: 372px;
+    width: 511px;
+    padding: 30px 36px;
+    background: #fffbf752;
+}
+#testimonials .testimonial-container .testimonial-cards img{
+    height: 60px;
+}
+
+#testimonials .testimonial-container .testimonial-cards .testimonials-content
+{
+    height: 170px;
+}
+#testimonials .testimonial-container .testimonial-cards .testimonials-content h4
+{
+    font-weight: 400;
+}
+#testimonials .testimonial-container .testimonial-cards .author
+{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+#testimonials .testimonial-container .testimonial-cards .author img{
+    padding-right: 20px;
+    height: 60px;
+}
+#testimonials .testimonial-container .testimonial-cards .author h5
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* Testimonials section ends */
+
+/* instagram section starts */
+
+#instagram .insta-header h2{
+    margin-bottom: 3px;
+}
+#instagram .insta-content
+{
+    display: flex;
+}
+#instagram .insta-icon{
+    height: 60px;
+    width: 60px;
+    margin:0 auto;
+}
+#instagram .insta-icon img{
+    height: 100%;
+    width: 100%;
+
+}
+#instagram .insta-header a h3{
+    font-size: 19px;
+    width: 500px;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 54px;
+    margin-bottom: 13px;
+    text-align: center;
+    text-decoration: underline;
+}
+/* instagram section ends */
 /* sign_in page & sign up page */
 /* form section starts */
-.form {
+.sign-in {
     height: 100vh;
     display: flex;
 }
 
-.form .form-style {
+.sign-in .form-style {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.form .form-style .left {
+/* .form .form-style .left {
     background: rgb(248 220 194 / 92%);
     padding: 200px 0 0 200px;
 }
@@ -364,16 +474,149 @@ header .btn {
     text-decoration: underline;
 }
 
-.form .form-style .right {
+*/
+.sign-in .form-style .right {
     width: 100%;
     height: 100vh;
     background: url(../images/form-right.webp) center center / cover no-repeat;
     ;
 }
 
-.form .form-style .right img {
+.sign-in .form-style .right img {
     width: 100%;
     height: 100vh;
 }
 
 /* form section ends */
+/* From Uiverse.io by micaelgomestavares */ 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+    cursor: pointer;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
