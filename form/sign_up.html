@@ -15,29 +15,31 @@
     <div class="form">
         <div class="form-style">
             <div class="left">
-                <h1>Create account</h1>
-                <form action="">
-                    <div class="form-input">
-                        <input type="name" name="fname" placeholder="First Name" required>
-                    </div>
-                    <div class="form-input">
-                        <input type="name" name="lname" placeholder="Last Name" required>
-                    </div>
-                    <div class="form-input">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-input">
-                        <input type="password" placeholder="Password" required>
-                    </div>
-                    <button><a href="#">Create</a></button>
-                </form>
+                <div class="form-container">
+                    <form action="">
+                        <h1 class="title">Create Account</h1>
+                        <label for="Full Name" class="label">Full Name</label>
+                        <input type="text" id="name" name="name" required="" class="input">
+
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" name="email" required="" class="input">
+
+                        <label for="password" class="label">Password</label>
+                        <input type="password" id="password" name="password" required="" class="input">
+
+                        <div class="button">
+                            <a href="#">Create</a>
+                        </div>
+
+                    </form>
+                </div>
+
             </div>
             <div class="right">
                 <!-- <img src="../images/form-right.webp" alt=""> -->
             </div>
         </div>
-    </div>
-    <!-- form section ends  -->
+        <!-- form section ends  -->
 </body>
 
 </html>

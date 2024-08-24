@@ -11,54 +11,32 @@
 
 <body>
     <!-- form section starts  -->
-    <div class="sign-in">
+    <div class="form">
         <div class="form-style">
             <div class="left">
-<form class="form">
-    <p class="title">Register </p>
-    <p class="message">Signup now and get full access to our app. </p>
-        <div class="flex">
-        <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>Firstname</span>
-        </label>
+                <div class="form-container">
+                    <form action="">
+                        <h1 class="title">Login</h1>
 
-        <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>Lastname</span>
-        </label>
-    </div>  
-            
-    <label>
-        <input class="input" type="email" placeholder="" required="">
-        <span>Email</span>
-    </label> 
-        
-    <label>
-        <input class="input" type="password" placeholder="" required="">
-        <span>Password</span>
-    </label>
-    <label>
-        <input class="input" type="password" placeholder="" required="">
-        <span>Confirm password</span>
-    </label>
-    <button class="submit">Submit</button>
-    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
-</form>
-                <!-- <h1>Login</h1>
-                <form action="">
-                    <div class="form-input">
-                        <input type="email" name="email" placeholder="Email" required>
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" name="email" required="" class="input">
+
+                        <label for="password" class="label">Password</label>
+                        <input type="password" id="password" name="password" required="" class="input">
+
+                        <div class="forgot">
+                            <a href="#" class="forgot">Forgot your password?</a>
+                        </div>
+
+                        <div class="button">
+                            <a href="#">Sign In</a>
+                        </div>
+
+                    </form>
+                    <div id="create-account">
+                        <h4>Don't have an account?<a href="../form/sign_up.html">Create</a></h4>
                     </div>
-                    <div class="form-input">
-                        <input type="password" placeholder="Password" required>
-                    </div>
-                    <h4><a href="#" class="forgot">Forgot your password?</a></h4>
-                    <button><a href="#">Sign In</a></button>
-                </form>
-                <div id="create-account">
-                    <h4>Don't have an account?<a href="../form/sign_up.html">Create</a></h4>
-                </div> -->
+                </div>
             </div>
             <div class="right">
                 <!-- <img src="../images/form-right.webp" alt=""> -->

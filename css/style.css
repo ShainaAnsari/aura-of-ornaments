@@ -60,7 +60,8 @@ header .buttons {
     align-items: center;
     width: 210px;
 }
-header .buttons .btn{
+
+header .buttons .btn {
     width: 95px;
 }
 
@@ -167,7 +168,7 @@ header .buttons .btn{
 #main-banner .customers-block .customer-ratings {
     display: flex;
     align-items: center;
-    gap:6px;
+    gap: 6px;
 }
 
 #main-banner .customers-block .customer-ratings img {
@@ -226,10 +227,11 @@ header .buttons .btn{
 
 
 /* category-block section starts */
-#category-block h3{
+#category-block h3 {
     text-align: center;
     /* font-size: 25px; */
 }
+
 #category-block .card-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -255,9 +257,10 @@ header .buttons .btn{
     gap: 10px;
 }
 
-#category-block .card-container .cards .card-content h3{
+#category-block .card-container .cards .card-content h3 {
     font-size: 23px;
 }
+
 #category-block .card-container .cards .card-content .right-arrow {
     height: 30px;
     width: 26px;
@@ -277,7 +280,7 @@ header .buttons .btn{
     height: 86vh;
 }
 
-#product h3{
+#product h3 {
     text-align: center;
 }
 
@@ -328,22 +331,22 @@ header .buttons .btn{
 /* product section ends */
 
 /* Testimonials section starts */
-#testimonials .section-style
-{
+#testimonials .section-style {
     height: 77vh;
     /* background: black; */
 }
-#testimonials h3
-{
+
+#testimonials h3 {
     text-align: center;
     width: 445px;
     margin: 0 auto;
 }
-#testimonials .testimonials-header h2
-{
+
+#testimonials .testimonials-header h2 {
     margin-bottom: 0;
 }
-#testimonials .testimonials-header h3{
+
+#testimonials .testimonials-header h3 {
     font-size: 19px;
     width: 500px;
     margin: 0 auto;
@@ -351,71 +354,76 @@ header .buttons .btn{
     line-height: 54px;
     margin-bottom: 13px;
 }
-#testimonials .testimonial-container
-{
+
+#testimonials .testimonial-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     place-items: center;
     padding-top: 24px;
 }
-#testimonials .testimonial-container .testimonial-cards
-{
+
+#testimonials .testimonial-container .testimonial-cards {
     box-shadow: 0px 4px 100px 0px #AFADB51A;
     height: 372px;
     width: 511px;
     padding: 30px 36px;
     background: #fffbf752;
 }
-#testimonials .testimonial-container .testimonial-cards img{
+
+#testimonials .testimonial-container .testimonial-cards img {
     height: 60px;
 }
 
-#testimonials .testimonial-container .testimonial-cards .testimonials-content
-{
+#testimonials .testimonial-container .testimonial-cards .testimonials-content {
     height: 170px;
 }
-#testimonials .testimonial-container .testimonial-cards .testimonials-content h4
-{
+
+#testimonials .testimonial-container .testimonial-cards .testimonials-content h4 {
     font-weight: 400;
 }
-#testimonials .testimonial-container .testimonial-cards .author
-{
+
+#testimonials .testimonial-container .testimonial-cards .author {
     display: flex;
     align-items: center;
     padding-top: 15px;
 }
-#testimonials .testimonial-container .testimonial-cards .author img{
+
+#testimonials .testimonial-container .testimonial-cards .author img {
     padding-right: 20px;
     height: 60px;
 }
-#testimonials .testimonial-container .testimonial-cards .author h5
-{
+
+#testimonials .testimonial-container .testimonial-cards .author h5 {
     font-size: 20px;
     font-weight: 500;
 }
+
 /* Testimonials section ends */
 
 /* instagram section starts */
 
-#instagram .insta-header h2{
+#instagram .insta-header h2 {
     margin-bottom: 3px;
 }
-#instagram .insta-content
-{
+
+#instagram .insta-content {
     display: flex;
 }
-#instagram .insta-icon{
+
+#instagram .insta-icon {
     height: 60px;
     width: 60px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-#instagram .insta-icon img{
+
+#instagram .insta-icon img {
     height: 100%;
     width: 100%;
 
 }
-#instagram .insta-header a h3{
+
+#instagram .insta-header a h3 {
     font-size: 19px;
     width: 500px;
     margin: 0 auto;
@@ -425,198 +433,115 @@ header .buttons .btn{
     text-align: center;
     text-decoration: underline;
 }
+
 /* instagram section ends */
+
+
 /* sign_in page & sign up page */
-/* form section starts */
-.sign-in {
+.form {
     height: 100vh;
     display: flex;
 }
 
-.sign-in .form-style {
+.form .form-style {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-/* .form .form-style .left {
-    background: rgb(248 220 194 / 92%);
-    padding: 200px 0 0 200px;
+.form {
+    background: #fff1e696;
 }
 
-.form .form-style h1 {
-    color: #fff;
+.form .form-style .left {
+    display: grid;
+    place-items: center;
+}
+.form-container {
+    max-width: 372px;
+    height: 453px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 2px rgba(52, 52, 53, 0.185);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
 }
 
-.form .form-style .form-input {
-    margin: 20px 0;
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a202c;
 }
 
-.form .form-style .form-input input {
-    width: 310px;
-    height: 40px;
-    border: 1px solid rgb(0, 0, 0, .5);
-    font-size: 17px;
-    padding: 0 3px;
+.label {
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
 }
 
-.form .form-style button {
-    margin: 0 auto;
+.input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: #4a5568;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
 }
 
-.form .form-style .forgot {
-    display: block;
-    margin-bottom: 30px;
-    padding-right: 65px;
+.input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #cbd5e0;
 }
 
-.form #create-account a {
+.input:valid {
+    border: 1px solid green;
+}
+
+.input:invalid {
+    border: 1px solid rgba(14, 14, 14, 0.205);
+}
+
+.forgot {
+    padding-bottom: 18px;
+}
+
+.forgot a {
     text-decoration: underline;
 }
 
-*/
-.sign-in .form-style .right {
+.button {
+    background-color: #1a202c;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.button a {
+    color: #fff;
+}
+
+#create-account {
+    padding-top: 20px;
+}
+#create-account a{
+    text-decoration: underline;
+}
+.form-style .right {
     width: 100%;
     height: 100vh;
     background: url(../images/form-right.webp) center center / cover no-repeat;
-    ;
 }
 
-.sign-in .form-style .right img {
+.form-style .right img {
     width: 100%;
     height: 100vh;
 }
-
-/* form section ends */
-/* From Uiverse.io by micaelgomestavares */ 
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
-  }
-  
-  .title {
-    font-size: 28px;
-    color: royalblue;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-  }
-  
-  .title::before,.title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: royalblue;
-  }
-  
-  .title::before {
-    width: 18px;
-    height: 18px;
-    background-color: royalblue;
-  }
-  
-  .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
-  }
-  
-  .message, .signin {
-    color: rgba(88, 87, 87, 0.822);
-    font-size: 14px;
-  }
-  
-  .signin {
-    text-align: center;
-  }
-  
-  .signin a {
-    color: royalblue;
-  }
-  
-  .signin a:hover {
-    text-decoration: underline royalblue;
-  }
-  
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
-  }
-  
-  .form label {
-    position: relative;
-  }
-  
-  .form label .input {
-    width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    color: grey;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-  
-  .form label .input:placeholder-shown + span {
-    top: 15px;
-    font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,.form label .input:valid + span {
-    top: 0px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
-  .form label .input:valid + span {
-    color: green;
-  }
-  
-  .submit {
-    border: none;
-    outline: none;
-    background-color: royalblue;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transform: .3s ease;
-  }
-  
-  .submit:hover {
-    background-color: rgb(56, 90, 194);
-    cursor: pointer;
-  }
-  
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-  
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
-  }
+/* Sign-in & sign-up page ends */
