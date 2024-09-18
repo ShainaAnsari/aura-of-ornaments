@@ -58,20 +58,29 @@ h4 {
 }
 
 .btn:hover {
-    /* box-shadow: -1px -1px 1px rgba(255, 252, 252, 0.8), 1px 1px 1px rgba(255, 255, 255, 0.915); */
+    box-shadow: -1px -1px 1px rgba(255, 252, 252, 0.8), 1px 1px 1px rgba(255, 255, 255, 0.915);
+    /* background: #000; */
+    /* border: 1px solid rgba(125, 130, 108, 1); */
 }
+
+/* .btn:hover a{
+    color: #fff;
+} */
 
 .invert {
     filter: invert(1);
 }
 
 .section-style {
-    height: 70vh;
-    padding-top: 90px;
-    margin: 0 100px 0 100px;
+    margin: 90px 100px 0 100px;
 }
 
-.bg-color {
+.bg-white{
     background: #fff1e6;
     background: #fff1e696;
+    background: #fff;
+}
+.bg-black
+{
+    background: #000;
 }

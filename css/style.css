@@ -10,6 +10,7 @@
     border: none;
     scroll-behavior: smooth;
     transition: all 0.2s ease-in-out;
+    list-style: none;
 }
 
 /* Home page */
@@ -28,11 +29,11 @@ header {
     left: 0;
 }
 
-header .logo {
+.logo {
     width: 90px;
 }
 
-header .logo img {
+.logo img {
     width: 100%;
 }
 
@@ -181,14 +182,14 @@ header .buttons .btn {
     font-size: 16px;
 }
 
-#main-banner .social-icons {
+.social-icons {
     padding: 5px 0 10px 0;
     width: 155px;
     display: flex;
     gap: 16px;
 }
 
-#main-banner .social-icons img {
+.social-icons img {
     width: 40px;
 }
 
@@ -227,6 +228,10 @@ header .buttons .btn {
 
 
 /* category-block section starts */
+#category-block .section-style {
+    height: 57vh;
+}
+
 #category-block h3 {
     text-align: center;
     /* font-size: 25px; */
@@ -241,6 +246,10 @@ header .buttons .btn {
 #category-block .card-container .cards {
     height: 310px;
     width: 300px;
+}
+
+#category-block .card-container .cards:hover {
+    transform: translateY(-10px);
 }
 
 #category-block .card-container .cards img {
@@ -277,7 +286,7 @@ header .buttons .btn {
 /* product section starts */
 
 #product .section-style {
-    height: 86vh;
+    height: 72vh;
 }
 
 #product h3 {
@@ -292,7 +301,7 @@ header .buttons .btn {
 
 #product .product-container .product-cards {
     height: 530px;
-    width: 286px;
+    width: 300px;
 }
 
 #product .product-container .product-cards .product-img {
@@ -325,14 +334,26 @@ header .buttons .btn {
 
 #product .product-container .product-cards .product-content .btn {
     border: 1px solid rgba(125, 130, 108, 1);
-    /* background: transparent; */
+    background: #000;
+}
+
+#product .product-container .product-cards .product-content .btn:hover {
+    background: #fff;
+}
+
+#product .product-container .product-cards .product-content .btn a {
+    color: #f0f0f0;
+}
+
+#product .product-container .product-cards .product-content .btn:hover a {
+    color: #000;
 }
 
 /* product section ends */
 
 /* Testimonials section starts */
 #testimonials .section-style {
-    height: 77vh;
+    height: 61vh;
     /* background: black; */
 }
 
@@ -340,10 +361,12 @@ header .buttons .btn {
     text-align: center;
     width: 445px;
     margin: 0 auto;
+    /* color: #fff; */
 }
 
 #testimonials .testimonials-header h2 {
     margin-bottom: 0;
+    /* color: #fff; */
 }
 
 #testimonials .testimonials-header h3 {
@@ -364,15 +387,20 @@ header .buttons .btn {
 }
 
 #testimonials .testimonial-container .testimonial-cards {
-    box-shadow: 0px 4px 100px 0px #AFADB51A;
-    height: 372px;
+    box-shadow: 0px 4px 100px 0px #1515151a;
+    height: 336px;
     width: 511px;
-    padding: 30px 36px;
+    padding: 25px 36px;
     background: #fffbf752;
+    /* background: #fff; */
+}
+
+#testimonials .testimonial-container .testimonial-cards:hover {
+    transform: translateY(-10px);
 }
 
 #testimonials .testimonial-container .testimonial-cards img {
-    height: 60px;
+    height: 34px;
 }
 
 #testimonials .testimonial-container .testimonial-cards .testimonials-content {
@@ -402,9 +430,13 @@ header .buttons .btn {
 /* Testimonials section ends */
 
 /* instagram section starts */
+#instagram .section-style {
+    height: 87vh;
+}
 
 #instagram .insta-header h2 {
-    margin-bottom: 3px;
+    margin-bottom: 20px;
+    line-height: 40px;
 }
 
 #instagram .insta-content {
@@ -434,7 +466,183 @@ header .buttons .btn {
     text-decoration: underline;
 }
 
+#instagram .insta-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 21% 4%;
+    gap: 2em;
+
+}
+
+#instagram .insta-container .cards {
+    height: 310px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#instagram .insta-container .cards img {
+    height: 100%;
+    width: 100%;
+}
+
+#instagram .insta-container .picture-1 {
+    grid-area: 1 / 1;
+    height: 550px;
+    width: 420px;
+}
+
+#instagram .insta-container .picture-2 {
+    height: 233px;
+    width: 382px;
+    grid-area: 1 / 2;
+}
+
+#instagram .insta-container .picture-3 {
+    height: 286px;
+    width: 382px;
+    grid-area: 2 / 2;
+}
+
+#instagram .insta-container .picture-4 {
+    grid-area: 1 / 3;
+    height: 310px;
+    width: 380px;
+}
+
+#instagram .insta-container .picture-5 {
+    height: 208px;
+    grid-area: 3 / 3;
+    width: 380px;
+}
+
+#instagram .insta-container .picture-6 {
+    height: 550px;
+    grid-area: 1 / 4;
+    width: 420px;
+}
+
+#instagram .insta-container .cards .info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#instagram .insta-container .cards:hover .info {
+    bottom: 0%;
+}
+
+#instagram .insta-container .cards .info img {
+    cursor: pointer;
+    height: 140px;
+    width: 240px;
+    filter: invert(1);
+}
+
+#instagram .insta-container .cards .info img:hover {
+    filter: none;
+}
+
 /* instagram section ends */
+
+
+/* Newsletter section starts */
+#newsletter .aboveContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#newsletter .aboveContent h2 {
+    width: 350px;
+}
+
+#newsletter .aboveContent form .emailBox {
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter .aboveContent form .emailBox input {
+    border: 1px solid #000;
+    width: 25%;
+    border-radius: 0;
+}
+
+#newsletter .aboveContent form .emailBox input:focus {
+    box-shadow: none;
+}
+
+#newsletter .aboveContent form .emailBox button {
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+/* newsletter section ends */
+
+
+/* footer section stats */
+#footer 
+{
+    position:relative ;
+}
+#footer .downContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+}
+#footer .downContent .leftContent
+{
+    width: 50%;
+}
+#footer .downContent .leftContent h3 {
+    width: 75%;
+    padding: 20px 0;
+    color: #fff;
+}
+
+#footer .downContent .rightContent
+{
+    display: flex;
+    width: 50%;
+}
+
+#footer .downContent .rightContent .column {
+    text-align: left;
+    width: 250px;
+}
+#footer .downContent .rightContent .column h3
+{
+    text-align: left;
+    width: 200px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #fff;
+}
+
+#footer .downContent .rightContent .column li a{
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+#footer::before{
+    content: url(../images/footer-rose.png);
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+}
+/* footer section ends */
+
 
 
 /* sign_in page & sign up page */
@@ -457,13 +665,14 @@ header .buttons .btn {
     display: grid;
     place-items: center;
 }
+
 .form-container {
     max-width: 372px;
-    height: 453px;
+    /* height: 435px; */
     width: 100%;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0px 0px 0px 2px rgba(52, 52, 53, 0.185);
+    box-shadow: 0 3px 5px rgba(52, 52, 53, 0.185);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -476,11 +685,6 @@ header .buttons .btn {
     color: #1a202c;
 }
 
-.label {
-    color: rgb(0, 0, 0);
-    margin-bottom: 4px;
-}
-
 .input {
     padding: 10px;
     margin-bottom: 20px;
@@ -488,9 +692,14 @@ header .buttons .btn {
     font-size: 1rem;
     color: #4a5568;
     outline: none;
-    border: 1px solid transparent;
+    border: 1px solid rgba(52, 52, 53, 0.185);
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
+}
+
+.input::placeholder {
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .input:focus {
@@ -498,13 +707,13 @@ header .buttons .btn {
     box-shadow: 0 0 0 2px #cbd5e0;
 }
 
-.input:valid {
+/* .input:valid {
     border: 1px solid green;
 }
 
 .input:invalid {
     border: 1px solid rgba(14, 14, 14, 0.205);
-}
+} */
 
 .forgot {
     padding-bottom: 18px;
@@ -512,9 +721,11 @@ header .buttons .btn {
 
 .forgot a {
     text-decoration: underline;
+    font-size: 15px;
 }
 
-.button {
+button {
+    width: 100%;
     background-color: #1a202c;
     border: none;
     border-radius: 4px;
@@ -522,18 +733,19 @@ header .buttons .btn {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-align: center;
-}
-
-.button a {
     color: #fff;
+    font-size: 16px;
 }
 
-#create-account {
-    padding-top: 20px;
+#account {
+    padding-top: 5px;
+    text-align: center;
 }
-#create-account a{
+
+#account a {
     text-decoration: underline;
 }
+
 .form-style .right {
     width: 100%;
     height: 100vh;
@@ -544,4 +756,5 @@ header .buttons .btn {
     width: 100%;
     height: 100vh;
 }
+
 /* Sign-in & sign-up page ends */
