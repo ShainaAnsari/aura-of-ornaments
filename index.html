@@ -17,6 +17,7 @@
                 <img src="images/logo.svg" alt="Logo">
             </a>
         </div>
+
         <div class="menu">
             <a href="index.html">Home</a>
             <a href="product.html">Product</a>
@@ -24,19 +25,26 @@
             <a href="aboutUs.html">About Us</a>
             <a href="contactUs.html">Contact Us</a>
         </div>
-        <!-- <div class="icons invert">
-            <a href="form/sign_in.html"><img src="images/user.svg" alt="user"></a>
+
+        <div class="icons invert">
+            <div class="user-wrapper" id="userWrapper">
+                <!-- User image always visible -->
+                <img src="images/user.svg" alt="user" id="userIcon">
+                <div class="dropdown" id="userDropdown" style="display: none;">
+                    <ul class="locations">
+                        <li><a href="form/sign_in.html" id="signInOption">Sign In</a></li>
+                        <li><a href="form/sign_up.html" id="signUpOption">Sign Up</a></li>
+                        <li><a href="#" id="logout" style="display:none;">Log Out</a></li>
+                    </ul>
+                    <span id="userNameDisplay" style="display:none;"></span>
+                </div>
+            </div>
             <a href="Wishlist.html"><img src="images/wishlist.svg" alt="wishlist"></a>
             <a href="Cart.html"><img src="images/cart.svg" alt="cart"></a>
-        </div> -->
-        <div class="buttons">
-            <div class="btn">
-                <a href="form/sign_in.html">Log in</a>
-            </div>
-            <div class="btn">
-                <a href="form/sign_up.html">Sign Up</a>
-            </div>
         </div>
+        
+
+
 
     </header>
     <!-- header section ends  -->
@@ -465,6 +473,8 @@
         </div>
     </div>
     <!-- footer section ends -->
+
+    <script src="../JavaScript/script.js"></script>
 </body>
 
 </html>

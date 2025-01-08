@@ -55,26 +55,112 @@ header .menu a:hover {
     text-decoration: underline;
 }
 
-header .buttons {
+header .icons {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
-    width: 210px;
+    width: 147px;
 }
 
-header .buttons .btn {
-    width: 95px;
+header .icons img {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
 }
+
+.user-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    position: absolute;
+    top: 44px;
+    left: 56px;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    z-index: 10;
+    width: 108px;
+}
+
+.locations li {
+    margin: 5px 0;
+}
+
+.locations a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.locations a:hover {
+    text-decoration: underline;
+}
+
+#userNameDisplay {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+/* .user-wrapper {
+    position: relative;
+    display: inline-block; 
+}
+
+.dropdown {
+    display: none; 
+    position: absolute;
+    top: 44px;
+    left: 56px;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    z-index: 10;
+    width: 108px;
+}
+
+.user-wrapper:hover .dropdown {
+    display: block;
+}
+
+
+.locations li {
+    margin: 5px 0;
+}
+
+.locations a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.locations a:hover {
+    text-decoration: underline;
+} */
 
 /* header section ends */
 
 /* Main-banner section starts */
 
 #main-banner {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-        url(../images/main-banner.webp) center center / cover no-repeat;
+        url(../images/main-banner.webp) center center/cover no-repeat;
     display: flex;
+    width: 100%;
 }
 
 #main-banner .main-banner-content {
@@ -354,7 +440,7 @@ header .buttons .btn {
 /* Testimonials section starts */
 
 #testimonials .section-style {
-    height: 75vh;
+    height: 77vh;
     padding-top: 100px;
 }
 
@@ -382,15 +468,15 @@ header .buttons .btn {
 #testimonials .testimonial-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 70px;
     place-items: center;
     padding-top: 24px;
 }
 
 #testimonials .testimonial-container .testimonial-cards {
     box-shadow: 0px 4px 100px 0px #1515151a;
-    height: 348px;
-    width: 510px;
+    height: 353px;
+    width: 518px;
     padding: 25px 46px;
     background: #fff;
     /* text-align: justify; */
@@ -405,7 +491,7 @@ header .buttons .btn {
 }
 
 #testimonials .testimonial-container .testimonial-cards .testimonials-content {
-    height: 180px;
+    height: 202px;
 }
 
 #testimonials .testimonial-container .testimonial-cards .testimonials-content h4 {
@@ -416,7 +502,7 @@ header .buttons .btn {
 #testimonials .testimonial-container .testimonial-cards .author {
     display: flex;
     align-items: center;
-    padding-top: 17px;
+    /* padding-top: 17px; */
 }
 
 #testimonials .testimonial-container .testimonial-cards .author img {
@@ -594,27 +680,27 @@ header .buttons .btn {
 
 
 /* footer section stats */
-#footer 
-{
-    position:relative ;
+#footer {
+    position: relative;
 }
+
 #footer .downContent {
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
 }
-#footer .downContent .leftContent
-{
+
+#footer .downContent .leftContent {
     width: 50%;
 }
+
 #footer .downContent .leftContent h3 {
     width: 75%;
     padding: 20px 0;
     color: #fff;
 }
 
-#footer .downContent .rightContent
-{
+#footer .downContent .rightContent {
     display: flex;
     width: 50%;
 }
@@ -623,8 +709,8 @@ header .buttons .btn {
     text-align: left;
     width: 250px;
 }
-#footer .downContent .rightContent .column h3
-{
+
+#footer .downContent .rightContent .column h3 {
     text-align: left;
     width: 200px;
     font-weight: 500;
@@ -632,18 +718,20 @@ header .buttons .btn {
     color: #fff;
 }
 
-#footer .downContent .rightContent .column li a{
+#footer .downContent .rightContent .column li a {
     line-height: 50px;
     font-size: 20px;
     font-weight: 300;
     color: #fff;
 }
-#footer::before{
+
+#footer::before {
     content: url(../images/footer-rose.webp);
     position: absolute;
     right: 100px;
     bottom: 10px;
 }
+
 /* footer section ends */
 
 
@@ -763,3 +851,68 @@ button {
 }
 
 /* Sign-in & sign-up page ends */
+/* Homepage ends */
+
+
+
+/* Product Page starts*/
+
+/* product-banner section starts */
+#productContent {
+    width: 100%;
+    margin-top: 10em;
+    text-align: center;
+}
+
+#productContent h1 {
+    color: #000;
+    padding-bottom: 2px;
+}
+
+#productContent p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 26px;
+    padding: 6px 0 7px 0;
+    text-align: center;
+    width: 490px;
+    margin: auto;
+}
+
+/* #product-banner {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+        url(../images/product-banner.png) center center/cover no-repeat;
+    display: flex;
+}
+
+#product-banner .product-banner-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10em;
+}
+
+#product-banner .product-banner-content  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#product-banner .left h1 {
+    width: 700px;
+    padding-bottom: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+#product-banner p {
+    padding: 6px 0 7px 0;
+    width: 490px;
+} */
+
+/* product-banner section ends */
+/* search-bar sections start */
+
