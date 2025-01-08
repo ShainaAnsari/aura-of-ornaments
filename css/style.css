@@ -85,6 +85,7 @@ header .icons img {
     padding: 10px 15px;
     z-index: 10;
     width: 108px;
+    display: none;
 }
 
 .locations li {
@@ -97,6 +98,10 @@ header .icons img {
     font-size: 18px;
     line-height: 32px;
     font-weight: 500;
+}
+
+#logout {
+    display: none;
 }
 
 .locations a:hover {
@@ -106,55 +111,12 @@ header .icons img {
 #userNameDisplay {
     font-weight: bold;
     margin-top: 10px;
+    display: none;
 }
 
+/* header section ends  */
 
-
-/* .user-wrapper {
-    position: relative;
-    display: inline-block; 
-}
-
-.dropdown {
-    display: none; 
-    position: absolute;
-    top: 44px;
-    left: 56px;
-    transform: translateX(-50%);
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 15px;
-    z-index: 10;
-    width: 108px;
-}
-
-.user-wrapper:hover .dropdown {
-    display: block;
-}
-
-
-.locations li {
-    margin: 5px 0;
-}
-
-.locations a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 500;
-}
-
-.locations a:hover {
-    text-decoration: underline;
-} */
-
-/* header section ends */
-
-/* Main-banner section starts */
-
+/* Main banner section starts */
 #main-banner {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
@@ -858,7 +820,7 @@ button {
 /* Product Page starts*/
 
 /* product-banner section starts */
-#productContent {
+/* #productContent {
     width: 100%;
     margin-top: 10em;
     text-align: center;
@@ -880,8 +842,8 @@ button {
     margin: auto;
 }
 
-/* #product-banner {
-    min-height: 100vh;
+#product-banner {
+    min-height: 70vh;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
         url(../images/product-banner.png) center center/cover no-repeat;
@@ -916,3 +878,99 @@ button {
 /* product-banner section ends */
 /* search-bar sections start */
 
+/* .search-bar {
+    background-color: black;
+    margin: 10em auto 0 auto;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 6em;
+    place-items: center;
+    width: 85%;
+    gap: 1em;
+}
+
+.search-bar .main-search {
+    margin: unset;
+    width: 100%;
+}
+
+.main-search img {
+    margin-left: 1em;
+}
+
+.main-search input {
+    width: 80%;
+    height: 100%;
+    margin-left: 20px;
+} */
+
+.search-bar {
+    margin: 10em auto 0 auto;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+    width: 85%;
+    gap: 1em;
+}
+
+.search-bar .main-search {
+    border: 1px solid #000;
+    width: 100%;
+    height: 3em;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 80px 0px rgba(175, 173, 181, 0.2);
+}
+
+.search-bar .main-search .searchIcon {
+    height: 28px;
+    width: 28px;
+}
+
+.search-bar .main-search img {
+    margin-left:8px;
+}
+
+.main-search input {
+    border: unset;
+    width: 83%;
+    height: 100%;
+    margin-left: 12px;
+    border-radius: 0;
+}
+
+.main-search input:focus {
+    box-shadow: none;
+}
+
+.search-bar .sort {
+    width: 172px;
+    height: 49px;
+}
+
+.search-bar button {
+    width: 174px;
+    height: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+.search-bar .sort button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+/* search-bar sections ends */
+/* Product Page ends */
+
+
+
+/* Responsive view */
+@media screen and (max-width:768px) {
+    header {}
+}
