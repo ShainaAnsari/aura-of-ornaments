@@ -905,7 +905,7 @@ button {
 } */
 
 .search-bar {
-    margin: 10em auto 0 auto;
+    margin: 10em auto 4em auto;
     display: grid;
     grid-template-columns: 80% 20%;
     place-items: center;
@@ -929,7 +929,7 @@ button {
 }
 
 .search-bar .main-search img {
-    margin-left:8px;
+    margin-left: 8px;
 }
 
 .main-search input {
@@ -964,8 +964,66 @@ button {
     gap: 12px;
 }
 
-
 /* search-bar sections ends */
+
+
+/* mainProduct section starts */
+#mainProduct .radio-container h3{
+    margin-bottom: 18px;
+} 
+.radio-container {
+    max-width: 300px;
+    color: #000;
+}
+
+.radio-wrapper {
+    margin-bottom: 20px;
+}
+
+.radio-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.radio-button input[type="radio"] {
+    display: none;
+}
+
+.radio-checkmark {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+.radio-checkmark:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-label {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* mainProduct section ends */
 /* Product Page ends */
 
 
