@@ -909,18 +909,19 @@ button {
     display: grid;
     grid-template-columns: 80% 20%;
     place-items: center;
-    width: 85%;
+    width: 100%;
     gap: 1em;
 }
 
 .search-bar .main-search {
     border: 1px solid #000;
-    width: 100%;
+    width: 93%;
     height: 3em;
     margin: auto;
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 80px 0px rgba(175, 173, 181, 0.2);
+    margin-left: 100px;
 }
 
 .search-bar .main-search .searchIcon {
@@ -934,7 +935,7 @@ button {
 
 .main-search input {
     border: unset;
-    width: 83%;
+    width: 84%;
     height: 100%;
     margin-left: 12px;
     border-radius: 0;
@@ -950,11 +951,12 @@ button {
 }
 
 .search-bar button {
-    width: 174px;
+    width: 158px;
     height: 100%;
     padding: 10px;
     font-size: 1rem;
     border-radius: 0;
+    margin-left: 20px;
 }
 
 .search-bar .sort button {
@@ -962,6 +964,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    margin-left: 0;
 }
 
 /* search-bar sections ends */
