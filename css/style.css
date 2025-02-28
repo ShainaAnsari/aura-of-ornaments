@@ -905,7 +905,7 @@ button {
 } */
 
 .search-bar {
-    margin: 10em auto 4em auto;
+    margin: 10em auto 0 auto;
     display: grid;
     grid-template-columns: 80% 20%;
     place-items: center;
@@ -951,7 +951,7 @@ button {
 }
 
 .search-bar button {
-    width: 158px;
+    width: 160px;
     height: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -971,39 +971,130 @@ button {
 
 
 /* mainProduct section starts */
-#mainProduct .radio-container h3{
-    margin-bottom: 18px;
-} 
-.radio-container {
-    max-width: 300px;
+/* === Main Container: Flex to Align Sections Horizontally === */
+#mainProduct {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns sections at the top */
+    width: 100%;
+}
+
+/* === Ensuring Both Sections Align Properly === */
+#mainProduct .section-style {
+    display: flex;
+    width: 100%;
+    align-items: flex-start; /* Ensures everything stays aligned at the top */
+}
+
+/* === Left Options Section - Slightly Smaller than 1/5 === */
+.options-section {
+    width: 20%;
+    padding-right: 10px;
+}
+
+/* === Right Products Section - Adjusted to Fit === */
+.product-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+/* === Product Cards (Fixed Size) === */
+.product-cards {
+    height: 530px;
+    width: 300px;
+}
+
+/* === Product Image Container === */
+.product-cards .product-img {
+    height: 310px;
+    width: 300px;
+}
+
+/* === Image Fitting === */
+.product-cards .product-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* === Product Content Styling === */
+.product-cards .product-content h4 {
+    padding-top: 7px;
+}
+
+.product-cards .product-content h3 {
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+.product-cards .product-content h5 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 48px;
+}
+
+/* === Button Styles === */
+.product-cards .product-content .btn {
+    border: 1px solid rgba(125, 130, 108, 1);
+    background: #000;
+}
+
+.product-cards .product-content .btn:hover {
+    background: #fff;
+}
+
+.product-cards .product-content .btn a {
+    color: #f0f0f0;
+}
+
+.product-cards .product-content .btn:hover a {
     color: #000;
 }
 
-.radio-wrapper {
-    margin-bottom: 20px;
+/* === Updated Options Section Styling === */
+#mainProduct .radio-container h3 {
+    margin-bottom: 14px;
+    font-weight: 500;
 }
 
+.radio-container {
+    max-width: 280px;
+    color: #000;
+}
+
+/* === Increased spacing between radio button options === */
+.radio-wrapper {
+    margin-bottom: 15px;
+}
+
+/* === Radio button alignment === */
 .radio-button {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-
+/* === Hide default radio buttons === */
 .radio-button input[type="radio"] {
     display: none;
 }
 
+/* === Radio button outer circle === */
 .radio-checkmark {
     display: inline-block;
     position: relative;
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-    border: 2px solid #333;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    border: 2px solid #000;
     border-radius: 50%;
 }
 
+/* === Inner circle (hidden by default) === */
 .radio-checkmark:before {
     content: "";
     position: absolute;
@@ -1013,15 +1104,19 @@ button {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #333;
+    background-color: #000;
+    transition: transform 0.2s ease-in-out;
 }
 
-.radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+/* === Show inner circle when selected === */
+.radio-button input[type="radio"]:checked + .radio-checkmark:before {
     transform: translate(-50%, -50%) scale(1);
+    background-color: rgb(22, 22, 22);
 }
 
+/* === Adjusted font size of labels === */
 .radio-label {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
 }
 
