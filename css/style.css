@@ -13,7 +13,7 @@
     list-style: none;
 }
 
-/* Home page */
+/* Homepage section starts */
 /* header section starts */
 header {
     width: 100%;
@@ -109,9 +109,9 @@ header .icons img {
 }
 
 #userNameDisplay {
-    font-weight: bold;
     margin-top: 10px;
     display: none;
+    font-weight: 400;
 }
 
 /* header section ends  */
@@ -695,215 +695,10 @@ header .icons img {
 }
 
 /* footer section ends */
+/* homepage section ends */
 
-
-
-/* sign_in page & sign up page */
-.form {
-    height: 100vh;
-    display: flex;
-}
-
-.form .form-style {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.form {
-    background: #fff1e696;
-    /* background: #fff; */
-}
-
-.form .form-style .left {
-    display: grid;
-    place-items: center;
-}
-
-.form-container {
-    max-width: 372px;
-    /* height: 435px; */
-    width: 100%;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 3px 5px rgba(52, 52, 53, 0.185);
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-}
-
-.title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #1a202c;
-}
-
-.input {
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    font-size: 1rem;
-    color: #4a5568;
-    outline: none;
-    border: 1px solid rgba(52, 52, 53, 0.185);
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out;
-}
-
-.input::placeholder {
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.input:focus {
-    background-color: #fff;
-    box-shadow: 0 0 0 2px #cbd5e0;
-}
-
-/* .input:valid {
-    border: 1px solid green;
-}
-
-.input:invalid {
-    border: 1px solid rgba(14, 14, 14, 0.205);
-} */
-
-.forgot {
-    padding-bottom: 18px;
-}
-
-.forgot a {
-    text-decoration: underline;
-    font-size: 15px;
-}
-
-button {
-    width: 100%;
-    background-color: #1a202c;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-}
-
-#account {
-    padding-top: 5px;
-    text-align: center;
-}
-
-#account a {
-    text-decoration: underline;
-    padding-left: 5px;
-}
-
-.form-style .right {
-    width: 100%;
-    height: 100vh;
-    background: url(../images/form-right.webp) center center / cover no-repeat;
-}
-
-.form-style .right img {
-    width: 100%;
-    height: 100vh;
-}
-
-/* Sign-in & sign-up page ends */
-/* Homepage ends */
-
-
-
-/* Product Page starts*/
-
-/* product-banner section starts */
-/* #productContent {
-    width: 100%;
-    margin-top: 10em;
-    text-align: center;
-}
-
-#productContent h1 {
-    color: #000;
-    padding-bottom: 2px;
-}
-
-#productContent p {
-    color: #000;
-    font-size: 16px;
-    font-weight: 200;
-    line-height: 26px;
-    padding: 6px 0 7px 0;
-    text-align: center;
-    width: 490px;
-    margin: auto;
-}
-
-#product-banner {
-    min-height: 70vh;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-        url(../images/product-banner.png) center center/cover no-repeat;
-    display: flex;
-}
-
-#product-banner .product-banner-content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 10em;
-}
-
-#product-banner .product-banner-content  .left {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-#product-banner .left h1 {
-    width: 700px;
-    padding-bottom: 2px;
-    position: relative;
-    display: inline-block;
-}
-
-#product-banner p {
-    padding: 6px 0 7px 0;
-    width: 490px;
-} */
-
-/* product-banner section ends */
-/* search-bar sections start */
-
-/* .search-bar {
-    background-color: black;
-    margin: 10em auto 0 auto;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    height: 6em;
-    place-items: center;
-    width: 85%;
-    gap: 1em;
-}
-
-.search-bar .main-search {
-    margin: unset;
-    width: 100%;
-}
-
-.main-search img {
-    margin-left: 1em;
-}
-
-.main-search input {
-    width: 80%;
-    height: 100%;
-    margin-left: 20px;
-} */
-
+/* Product page starts */
+/* search bar section starts */
 .search-bar {
     margin: 10em auto 0 auto;
     display: grid;
@@ -971,55 +766,48 @@ button {
 
 
 /* mainProduct section starts */
-/* === Main Container: Flex to Align Sections Horizontally === */
 #mainProduct {
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: flex-start; /* Aligns sections at the top */
+    justify-content: center;
+    align-items: flex-start; 
     width: 100%;
 }
 
-/* === Ensuring Both Sections Align Properly === */
 #mainProduct .section-style {
     display: flex;
     width: 100%;
-    align-items: flex-start; /* Ensures everything stays aligned at the top */
+    align-items: flex-start; 
 }
 
-/* === Left Options Section - Slightly Smaller than 1/5 === */
 .options-section {
     width: 20%;
     padding-right: 10px;
 }
 
-/* === Right Products Section - Adjusted to Fit === */
 .product-container {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+    border-bottom: 2px solid rgba(243, 243, 243, 1);
 }
 
-/* === Product Cards (Fixed Size) === */
 .product-cards {
     height: 530px;
     width: 300px;
 }
 
-/* === Product Image Container === */
 .product-cards .product-img {
     height: 310px;
     width: 300px;
 }
 
-/* === Image Fitting === */
 .product-cards .product-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-/* === Product Content Styling === */
 .product-cards .product-content h4 {
     padding-top: 7px;
 }
@@ -1037,7 +825,6 @@ button {
     line-height: 48px;
 }
 
-/* === Button Styles === */
 .product-cards .product-content .btn {
     border: 1px solid rgba(125, 130, 108, 1);
     background: #000;
@@ -1055,7 +842,6 @@ button {
     color: #000;
 }
 
-/* === Updated Options Section Styling === */
 #mainProduct .radio-container h3 {
     margin-bottom: 14px;
     font-weight: 500;
@@ -1066,24 +852,20 @@ button {
     color: #000;
 }
 
-/* === Increased spacing between radio button options === */
 .radio-wrapper {
     margin-bottom: 15px;
 }
 
-/* === Radio button alignment === */
 .radio-button {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-/* === Hide default radio buttons === */
 .radio-button input[type="radio"] {
     display: none;
 }
 
-/* === Radio button outer circle === */
 .radio-checkmark {
     display: inline-block;
     position: relative;
@@ -1094,7 +876,6 @@ button {
     border-radius: 50%;
 }
 
-/* === Inner circle (hidden by default) === */
 .radio-checkmark:before {
     content: "";
     position: absolute;
@@ -1108,13 +889,11 @@ button {
     transition: transform 0.2s ease-in-out;
 }
 
-/* === Show inner circle when selected === */
 .radio-button input[type="radio"]:checked + .radio-checkmark:before {
     transform: translate(-50%, -50%) scale(1);
     background-color: rgb(22, 22, 22);
 }
 
-/* === Adjusted font size of labels === */
 .radio-label {
     font-size: 18px;
     font-weight: 300;
@@ -1126,7 +905,228 @@ button {
 
 
 
-/* Responsive view */
-@media screen and (max-width:768px) {
-    header {}
+/* service Page starts*/
+/* Hero Section */
+/* .hero {
+    background: url("../images/big banner.jpg") center center/cover no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 10px;
+} */
+
+/* Split Section */
+.split-section {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: black;
+    color: white;
+    height: 60vh;
+}
+
+.split-section .section-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.split-content {
+    width: 50%;
+}
+
+.split-content h1 {
+    line-height: 70px;
+    color: white;
+    font-size: 54px;
+    font-weight: 400;
+    width: 770px;
+    padding-bottom: 2px;
+}
+
+.split-content p{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 26px;
+    width: 490px;
+    padding: 8px 0 6px 0;
+}
+
+.split-section .split-image {
+    width: 500px;
+}
+.split-image img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.services-grid .section-style {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: scale(1.06);
+}
+ 
+.service-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.service-card p {
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* service page ends */
+
+
+ /* sign_in page & sign up page */
+.form {
+    height: 100vh;
+    display: flex;
+}
+
+.form .form-style {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form {
+    background: #fff1e696;
+    /* background: #fff; */
+}
+
+.form .form-style .left {
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+    max-width: 372px;
+    /* height: 435px; */
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 3px 5px rgba(52, 52, 53, 0.185);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a202c;
+}
+
+.input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: #4a5568;
+    outline: none;
+    border: 1px solid rgba(52, 52, 53, 0.185);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input::placeholder {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #cbd5e0;
+}
+
+
+.forgot {
+    padding-bottom: 18px;
+}
+
+.forgot a {
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    background-color: #1a202c;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+#account {
+    padding-top: 5px;
+    text-align: center;
+}
+
+#account a {
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.form-style .right {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/form-right.webp) center center / cover no-repeat;
+}
+
+.form-style .right img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Sign-in & sign-up page ends */
