@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             localStorage.clear();
             alert('You have been logged out!');
-            window.location.href = "sign_in.html"; // Make sure this path is correct
+            window.location.href = "form/sign_in.html"; // Make sure this path is correct
         });
     }
 
