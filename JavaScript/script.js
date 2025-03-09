@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Ensure correct user state on page load
     window.onload = function () {
         const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
         if (userIcon) userIcon.style.display = 'block';
@@ -92,3 +91,70 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 });
+
+// Address page js
+document.addEventListener("DOMContentLoaded", function() {
+    const addressForm = document.getElementById("userAddressForm");
+    
+    addressForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Address saved successfully!");
+    });
+}); 
+
+// Products wishlist icon
+document.querySelectorAll('.wishlist-icon img').forEach(icon => {
+    icon.addEventListener('click', function() {
+        // Store the current width & height before swapping the image
+        let fixedWidth = this.clientWidth;
+        let fixedHeight = this.clientHeight;
+
+        // Toggle the image source
+        if (this.getAttribute("src") === "images/wishlist.svg") {
+            this.setAttribute("src", "images/red-heart.svg"); // Change to red heart
+        } else {
+            this.setAttribute("src", "images/wishlist.svg"); // Change back to normal heart
+        }
+
+        // Reapply the original width & height to prevent size changes
+        this.style.width = `${fixedWidth}px`;
+        this.style.height = `${fixedHeight}px`;
+    });
+});
+
+
+
+// To increase and decrease quantity of a product
+document.addEventListener("DOMContentLoaded", function () {
+    const decreaseBtn = document.getElementById("decrease");
+    const increaseBtn = document.getElementById("increase");
+    const quantityInput = document.getElementById("quantity");
+
+    decreaseBtn.addEventListener("click", function () {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+
+    increaseBtn.addEventListener("click", function () {
+        let currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+    });
+});
+
+
+
+// Product details toggle 
+function toggleSection(sectionId) {
+    let section = document.getElementById(sectionId);
+    let header = section.previousElementSibling;
+
+    if (section.style.display === "block") {
+        section.style.display = "none";
+        header.classList.remove("active");
+    } else {
+        section.style.display = "block";
+        header.classList.add("active");
+    }
+}

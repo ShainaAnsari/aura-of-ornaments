@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <title>Aura Of Ornaments | User Address </title>
+</head>
+
+<body>
+    <section class="address-section">
+        <div class="section-style">
+            <div class="address-container">
+                <h1>Manage Address</h1>
+                <form id="userAddressForm" class="address-form">
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" placeholder="House No., Building, Street, Area"
+                            required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="pincode">Pincode</label>
+                            <input type="text" id="pincode" name="pincode" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="landmark">Landmark</label>
+                            <input type="text" id="landmark" name="landmark" placeholder="Nearby location (optional)">
+                        </div>
+                    </div>
+
+                    <button type="submit" id="address-saveBtn" class="btn">Save</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

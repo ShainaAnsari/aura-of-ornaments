@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <title>Aura Of Ornaments | Product Detail</title>
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <header>
+        <div class="logo invert">
+            <a href="../index.html">
+                <img src="../images/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="../index.html">Home</a>
+            <a href="../product.html">Product</a>
+            <a href="../services.html">Services</a>
+            <a href="../aboutUs.html">About Us</a>
+            <a href="../contactUs.html">Contact Us</a>
+        </div>
+
+        <div class="icons invert">
+            <div class="user-wrapper" id="userWrapper">
+                <img src="../images/user.svg" alt="user" id="userIcon">
+                <div class="dropdown" id="userDropdown">
+                    <ul class="locations">
+                        <li><a href="../form/sign_in.html" id="signInOption">Sign In</a></li>
+                        <li><a href="../form/sign_up.html" id="signUpOption">Sign Up</a></li>
+                        <li><a href="#" id="logout">Log Out</a></li>
+                    </ul>
+                    <span id="userNameDisplay"></span>
+                </div>
+            </div>
+            <a href="../userAccount/wishlist.html"><img src="../images/wishlist.svg" alt="wishlist"></a>
+            <a href="../userAccount/cart.html"><img src="../images/cart.svg" alt="cart"></a>
+        </div>
+
+    </header>
+    <!-- header section ends  -->
+
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="section-style">
+            <div class="product-detail-container">
+                <div class="product-detail-image">
+                    <span class="wishlist-icon bigger">
+                        <img src="../images/wishlist.svg" alt="Wishlist Icon" class="wishlist-img">
+                    </span>
+                    <img src="../images/product14.webp" alt="Jewelry Product">
+                </div>
+                <div class="product-details">
+                    <h2>Elegant Diamond Ring</h2>
+                    <h4>Category: Ring</h4>
+                    <p>Rating ⭐⭐⭐⭐☆</p>
+                    <h5 class="price">Price: Rs.900</h5>
+                    <div class="product-options">
+                        <label for="size">Size:</label>
+                        <select id="size">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+
+                    <div class="quantity-container">
+                        <label for="quantity">Quantity</label>
+                        <div class="quantity-box">
+                            <button id="decrease">-</button>
+                            <input type="text" id="quantity" value="1" readonly>
+                            <button id="increase">+</button>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="btn">
+                            <a href="#">Add to cart</a>
+                        </div>
+                        <div class="btn">
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Share Section -->
+                    <div class="option share">
+                        <img src="../images/share.svg" alt="Share Icon">
+                        <span>Share</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Product Information -->
+    <section class="product-desciption-container">
+        <div class="section-style">
+            <div class="collapsible">
+                <div class="collapsible-header" onclick="toggleSection('product-info')">
+                    <h2>Product Description</h2>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="collapsible-content" id="product-info">
+                    <p><strong>Material:</strong> 925 Sterling Silver, AAA-Grade Diamonds</p>
+                    <p><strong>Weight:</strong> 15g</p>
+                    <p><strong>Finish:</strong> Rhodium Plated for long-lasting shine</p>
+                    <p><strong>Occasion:</strong> Wedding, Anniversary, Party</p>
+                    <p><strong>Care Instructions:</strong> Store in a dry place, avoid exposure to water and chemicals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Review Section -->
+    <div class="review-section">
+        <div class="section-style">
+            <div class="collapsible">
+                <div class="collapsible-header" onclick="toggleSection('review-section')">
+                    <h2>Customer Reviews</h2>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="collapsible-content" id="review-section">
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <span class="stars">★★★★☆</span>
+                            <p>4.5 out of 5</p>
+                        </div>
+                        <p>Based on 12 reviews</p>
+                    </div>
+
+                    <!-- User Reviews -->
+                    <div class="reviews">
+                        <div class="review">
+                            <h4>John D.</h4>
+                            <span class="stars">★★★★★</span>
+                            <p>"Absolutely love this piece! Great quality and fast shipping."</p>
+                        </div>
+                        <div class="review">
+                            <h4>Sarah K.</h4>
+                            <span class="stars">★★★★☆</span>
+                            <p>"Elegant design, but wish the size options were clearer."</p>
+                        </div>
+                    </div>
+
+                    <!-- Review Form -->
+                    <div class="review-form">
+                        <h3>Write a Review</h3>
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+
+                            <label for="rating">Rating:</label>
+                            <select id="rating">
+                                <option>★★★★★</option>
+                                <option>★★★★☆</option>
+                                <option>★★★☆☆</option>
+                                <option>★★☆☆☆</option>
+                                <option>★☆☆☆☆</option>
+                            </select>
+
+                            <label for="review-text">Your Review:</label>
+                            <textarea id="review-text" placeholder="Share your thoughts..." required></textarea>
+
+                            <button type="submit">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Related Products -->
+    <section id="product">
+        <div class="section-style">
+            <h2 class="relatedProductsTtitle">Related Products</h2>
+            <div class="product-container">
+                <div class="product-cards">
+                    <div class="product-img">
+                        <!-- Wishlist Icon in the Top-Right Corner -->
+                        <span class="wishlist-icon">
+                            <img src="../images/wishlist.svg" alt="Wishlist Icon" class="wishlist-img">
+                        </span>
+                        <img src="../images/double-ring.webp" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4>Ring</h4>
+                        <h3>Millie Ring</h3>
+                        <h5>Rs.400</h5>
+                        <div class="btn">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-cards">
+                    <div class="product-img">
+                        <!-- Wishlist Icon in the Top-Right Corner -->
+                        <span class="wishlist-icon">
+                            <img src="../images/wishlist.svg" alt="Wishlist Icon" class="wishlist-img">
+                        </span>
+                        <img src="../images/double-ring.webp" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4>Ring</h4>
+                        <h3>Millie Ring</h3>
+                        <h5>Rs.400</h5>
+                        <div class="btn">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-cards">
+                    <div class="product-img">
+                        <!-- Wishlist Icon in the Top-Right Corner -->
+                        <span class="wishlist-icon">
+                            <img src="../images/wishlist.svg" alt="Wishlist Icon" class="wishlist-img">
+                        </span>
+                        <img src="../images/double-ring.webp" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4>Ring</h4>
+                        <h3>Millie Ring</h3>
+                        <h5>Rs.400</h5>
+                        <div class="btn">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-cards">
+                    <div class="product-img">
+                        <!-- Wishlist Icon in the Top-Right Corner -->
+                        <span class="wishlist-icon">
+                            <img src="../images/wishlist.svg" alt="Wishlist Icon" class="wishlist-img">
+                        </span>
+                        <img src="../images/double-ring.webp" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4>Ring</h4>
+                        <h3>Millie Ring</h3>
+                        <h5>Rs.400</h5>
+                        <div class="btn">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-cards">
+                    <div class="product-img">
+                        <!-- Wishlist Icon in the Top-Right Corner -->
+                        <span class="wishlist-icon">
+                            <img src="../images/wishlist.svg" alt="Wishlist Icon" class="wishlist-img">
+                        </span>
+                        <img src="../images/double-ring.webp" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4>Ring</h4>
+                        <h3>Millie Ring</h3>
+                        <h5>Rs.400</h5>
+                        <div class="btn">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>

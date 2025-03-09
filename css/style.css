@@ -13,6 +13,11 @@
     list-style: none;
 }
 
+/* Hide scrollbar but keep scrolling functional */
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Homepage section starts */
 /* header section starts */
 header {
@@ -242,7 +247,7 @@ header .icons img {
 }
 
 .social-icons img:hover {
-    transform: scale(1.06);
+    transform: scale(1.22);
 }
 
 #main-banner .right {
@@ -400,6 +405,8 @@ header .icons img {
 #product .product-container .product-cards .product-content .btn:hover a {
     color: #000;
 }
+
+
 
 /* product section ends */
 
@@ -794,6 +801,7 @@ header .icons img {
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     border-bottom: 2px solid rgba(243, 243, 243, 1);
+    margin-left: 30px;
 }
 
 .product-cards {
@@ -1116,11 +1124,12 @@ header .icons img {
 }
 
 .contact-section .contact-container {
-    padding: 50px;
+    padding: 40px 50px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    height: 70vh;
+    height: 68vh;
     margin: 10px auto;
+    width: 780px;
 }
 
 .contact-section h1 {
@@ -1139,15 +1148,15 @@ header .icons img {
 }
 
 .contact-form label {
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 10px;
     text-align: left;
-    width: 80%;
+    width: 100%;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -1155,7 +1164,7 @@ header .icons img {
 }
 
 .contact-section .contact-container .btn {
-    width: 80%;
+    width: 100%;
     margin-top: 37px;
     background: #000;
 }
@@ -1277,6 +1286,149 @@ button {
 
 /* Sign-in & sign-up page ends */
 
+/* User Profile Section */
+
+/* User Profile Section */
+.userProfile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+/* User Profile Container */
+
+.userProfile-section .userProfile-container {
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin: 10px auto;
+    width: 780px;
+    background-color: white;
+}
+
+.userProfile-section .userProfile-container h1 {
+    color: #000;
+    text-align: center;
+}
+
+/* User Profile Form */
+.userProfile-section .userProfile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Labels */
+.userProfile-section .userProfile-form label {
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+}
+
+/* Input Fields */
+.userProfile-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+/* Textarea */
+.userProfile-section .userProfile-form #userProfile-address {
+    resize: none;
+    height: 80px;
+}
+
+/* Edit Button */
+.userProfile-section .userProfile-container .userProfile-btn {
+    margin-top: 10px;
+}
+
+
+/* User Profile Page ends */
+
+
+
+
+/* Adress page starts */
+/* Address Section Styling */
+.address-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+
+.address-section .address-container{
+    width: 780px;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.address-container h1 {
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+}
+
+/* Address Form Styling */
+.address-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Grouping Inputs Side by Side */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+/* Input Box Styling */
+.input-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-box input, 
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Textarea Styling */
+textarea {
+    resize: none;
+}
+
+/* Button Styling */
+#userAddressForm .btn {
+    background: #000;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Adress page ends */
+
 /* About Brand */
 /* Terms Of Service Page starts */
 
@@ -1315,14 +1467,448 @@ button {
     margin: 0 auto;
 }
 
-#terms a {
-    color: #c69c6d;
-    text-decoration: underline;
-}
-
-#terms a:hover {
-    color: #a67c52;
-}
 
 
 /*  Terms Of Service Page ends */
+
+
+
+/* product details page*/
+.product-detail-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+}
+
+/* Product Detail Container */
+.product-detail-container {
+    display: flex;
+    gap: 80px;
+    width: 100%;
+}
+
+/* Left Section - Product Image */
+.product-detail-image {
+    width: 45%;
+}
+
+.product-detail-image img {
+    width: 100%;
+}
+
+
+.product-details h2 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: none;
+    line-height: 50px;
+}
+
+.product-details h4
+{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.product-details p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+
+.product-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.product-options select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+
+.quantity-container {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.quantity-container label{
+    font-size: 18px;
+    line-height: 40px;
+}
+.quantity-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    width: 130px;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.quantity-box button {
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    width: 38px;
+    cursor: pointer;
+    color: #000;
+}
+
+.quantity-box input {
+    width: 38px;
+    text-align: center;
+    /* border: none; */
+    font-size: 18px;
+    background: none;
+    pointer-events: none;
+}
+
+.product-details .buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.product-details .buttons .btn {
+    width: 140px;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background: #000;
+}
+
+.product-details .buttons .btn a{
+    color: #fff;
+}
+
+.product-details .buttons .btn:hover {
+    background-color: #fff;
+}
+
+.product-details .buttons .btn:hover a{
+    color: #000;
+}
+
+
+/* Share option*/
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 296px;
+    margin-top: 33px;
+}
+
+.option img {
+    width: 20px;
+    height: 20px;
+}
+
+.option span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.option:hover {
+    background: #000;
+}
+
+.option:hover img{
+    filter: invert(1);
+}
+.option:hover span {
+    color: #fff;
+}
+
+
+
+
+/* Product Information */
+.product-desciption-container{
+    width: 100%;
+}
+.collapsible {
+    border-bottom: 2px solid #ddd;
+    /* border-radius: 5px; */
+    /* padding: 10px 0; */
+}
+.collapsible-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 15px;
+    /* background: #fff; */
+    /* border-radius: 5px; */
+}
+
+.product-desciption-container h2, .review-section h2{
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    color: #000;
+    /* text-transform: none; */
+    line-height: 50px;
+}
+.dropdown-icon {
+    font-size: 18px;
+    /* color: white; */
+}
+.collapsible-content {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    /* border-radius: 5px; */
+    margin-top: 5px;
+    /* border-left: 2px solid #ddd; */
+}
+
+.active .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+
+.product-desciption-container p{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+
+/* Review section */
+.review-section .section-style {
+    margin-top: 0;
+}
+
+.review-summary {
+    /* text-align: center; */
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.stars {
+    font-size: 20px;
+    color: black;
+}
+
+.reviews {
+    border-top: 2px solid rgb(185, 185, 185);
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.review {
+    border-bottom: 1px dashed #000;
+    padding: 15px 0;
+    max-width: 800px;
+    /* margin: 0 auto; */
+}
+
+.review h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.review p {
+    font-size: 16px;
+}
+
+.review-form {
+    margin-top: 30px;
+    max-width: 800px;
+    /* margin: 0 auto; */
+}
+
+.review-form h3 {
+    font-size: 22px;
+    /* text-align: center; */
+}
+
+.review-form label {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+}
+
+.review-form button {
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#product .relatedProductsTtitle{
+   font-size: 30px;
+}
+/* product detail page ends */
+
+/* Wishlist page */
+#product .section-style .wishlist-title{
+    padding-top: 50px ;
+}
+
+
+
+
+/* Cart page */
+/* Cart Section */
+.cart-container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.cart-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.continue-shopping {
+    float: right;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    border-bottom: 1px solid #000;
+}
+
+/* Cart Items */
+.cart-items {
+    margin-top: 30px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 2;
+    padding-left: 15px;
+}
+
+.cart-item-name {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cart-item-price {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Quantity Box */
+.cart-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    background: none;
+    border: 1px solid #000;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #000;
+}
+
+.delete-item {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Cart Total */
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Cart Summary */
+.cart-summary {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.estimated-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.checkout-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.checkout-info a {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout-btn:hover {
+    background-color: #333;
+}
