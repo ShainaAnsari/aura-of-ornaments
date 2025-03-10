@@ -102,46 +102,33 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 }); 
 
-// Products wishlist icon
-document.querySelectorAll('.wishlist-icon img').forEach(icon => {
-    icon.addEventListener('click', function() {
-        // Store the current width & height before swapping the image
-        let fixedWidth = this.clientWidth;
-        let fixedHeight = this.clientHeight;
-
-        // Toggle the image source
-        if (this.getAttribute("src") === "images/wishlist.svg") {
-            this.setAttribute("src", "images/red-heart.svg"); // Change to red heart
-        } else {
-            this.setAttribute("src", "images/wishlist.svg"); // Change back to normal heart
-        }
-
-        // Reapply the original width & height to prevent size changes
-        this.style.width = `${fixedWidth}px`;
-        this.style.height = `${fixedHeight}px`;
-    });
-});
 
 
 
 // To increase and decrease quantity of a product
 document.addEventListener("DOMContentLoaded", function () {
-    const decreaseBtn = document.getElementById("decrease");
-    const increaseBtn = document.getElementById("increase");
-    const quantityInput = document.getElementById("quantity");
+    // Select all quantity containers across different pages
+    const quantityContainers = document.querySelectorAll(".quantity-container");
 
-    decreaseBtn.addEventListener("click", function () {
-        let currentValue = parseInt(quantityInput.value);
-        if (currentValue > 1) {
-            quantityInput.value = currentValue - 1;
-        }
-    });
+    quantityContainers.forEach((container) => {
+        const decreaseBtn = container.querySelector("button:nth-child(1)");
+        const quantityInput = container.querySelector("input");
+        const increaseBtn = container.querySelector("button:nth-child(3)");
 
-    increaseBtn.addEventListener("click", function () {
-        let currentValue = parseInt(quantityInput.value);
-        quantityInput.value = currentValue + 1;
+        decreaseBtn.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+
+        increaseBtn.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+        });
     });
 });
+
 
 
 
