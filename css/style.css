@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
     padding: 0;
@@ -120,6 +120,7 @@ header .icons img {
 }
 
 /* header section ends  */
+
 
 /* Main banner section starts */
 #main-banner {
@@ -917,28 +918,6 @@ header .icons img {
 
 
 
-/* service Page starts*/
-/* Hero Section */
-/* .hero {
-    background: url("../images/big banner.jpg") center center/cover no-repeat;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero-content h1 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.hero-content p {
-    font-size: 20px;
-    margin-top: 10px;
-} */
-
 /* Split Section */
 .split-section {
     display: flex;
@@ -1204,8 +1183,6 @@ header .icons img {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 3px 5px rgba(52, 52, 53, 0.185);
-    display: flex;
-    flex-direction: column;
     border-radius: 10px;
 }
 
