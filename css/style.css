@@ -1264,21 +1264,18 @@ button {
 /* User Profile Section */
 
 /* User Profile Section */
-.userProfile-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
+.userProfile-section .section-style{
+    padding-top: 60px;
 }
 
 /* User Profile Container */
 
 .userProfile-section .userProfile-container {
-    padding: 50px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     height: auto;
-    margin: 10px auto;
+    margin: 0 auto;
     width: 780px;
     background-color: white;
 }
@@ -1293,12 +1290,13 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 /* Labels */
 .userProfile-section .userProfile-form label {
     font-weight: 500;
+    margin-top: 10px;
     text-align: left;
     width: 100%;
 }
@@ -1307,9 +1305,9 @@ button {
 .userProfile-input {
     width: 100%;
     padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
 }
 
 
@@ -1321,7 +1319,7 @@ button {
 
 /* Edit Button */
 .userProfile-section .userProfile-container .userProfile-btn {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
@@ -1332,19 +1330,16 @@ button {
 
 /* Adress page starts */
 /* Address Section Styling */
-.address-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
+.address-section .section-style{
+    padding-top: 60px;
 }
 
 
 .address-section .address-container {
     width: 780px;
+    margin: 0 auto;
     background: white;
-    padding: 50px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -1385,7 +1380,7 @@ button {
 .input-box textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #0e0e0e;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -1511,6 +1506,7 @@ textarea {
     font-size: 16px;
     border: 1px solid #000;
     border-radius: 5px;
+    width: 17%;
 }
 
 
@@ -1828,7 +1824,7 @@ textarea {
     width: 12%;
 }
 
-.checkout-btn {
+.checkout-btn a{
     display: block;
     width: 100%;
     padding: 15px;
@@ -1843,21 +1839,30 @@ textarea {
     margin-top: 20px;
 }
 
-.checkout-btn:hover {
+.checkout-btn:hover a{
     background: #fff;
     color: #000;
 }
 
+/* Cart page ends */
+
+
+
 /* Shipping Page */
+#shipping-section .section-style{
+    padding-top: 60px;
+}
+#shipping-section .shipping-border{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 .shipping-container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: 20px auto;
-    padding: 50px;
-    /* border: 1px solid #000; */
-    background-color: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .shipping-form-container,
@@ -1878,16 +1883,18 @@ textarea {
 }
 
 .shipping-container .shipping-form-group label {
-    display: block;
     font-weight: 500;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
 }
 
 .shipping-container .shipping-form-group input,
 select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #000;
-    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     color: #000;
 }
 
@@ -1936,19 +1943,24 @@ select {
     margin-top: 15px;
 }
 
-.shipping-container .shipping-form-group .submit-btn {
+.shipping-container .submit-btn {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     background: #000;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    border: none;
     cursor: pointer;
     margin-top: 20px;
+    border: 1px solid #000;
+}
+
+.shipping-container .submit-btn:hover{
+    background: #fff;
+    color: #000;
 }
 
 /* Shipping page ends */
